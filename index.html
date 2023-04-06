@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy"
+        content="default-src 'unsafe-inline' 'self'; connect-src *; style-src-elem *; font-src *; style-src 'unsafe-inline' 'self'; img-src *; frame-src *; script-src-elem *;" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="/assets/github.ico" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <link href="style/styles.css" rel="stylesheet" />
+    <script type="text/javascript" src="lib/main.js"></script>
+    <script type="module" src="https://md-block.verou.me/md-block.js"></script>
+    <script src="lib/prism.js"></script>
+    <link href="style/prism.css" rel="stylesheet" />
+    <title>Markdown Editor</title>
+</head>
+
+<body>
+    <div class="locked">
+        <label class="header-lbl">
+            Live Markdown Editor
+        </label>
+        <a class="header-lbl" href="https://aaronmansfield5.github.io" target="_blank">
+            aaronmansfield5's GitHub Showcase
+        </a>
+    </div>
+    <main>
+        <div>
+            <textarea class="md-input" id="md-input">
+# This is a Header!
+## Test Title
+### Sample JavaScript Code:
+```javascript
+function add(x, y) {
+    return x + y;
+}
+```
+            
+- *lorem*
+- __ipsum__
+- ~~dolor~~
+            
+`Velox brunneis vulpes` salit super piger canem.
+            
+<a href="https://github.com/aaronmansfield5" target="_blank">Haec phantasma page</a>
+            </textarea>
+    
+            <div class="md-preview">
+                <md-block id="md-preview">
+                    # This is a Header!
+                    ## Test Title
+                    ### Sample JavaScript Code:
+                    ```javascript
+                    function add(x, y) {
+                        return x + y;
+                    }
+                    ```
+            
+                    - *lorem*
+                    - __ipsum__
+                    - ~~dolor~~
+            
+                    `Velox brunneis vulpes` salit super piger canem.
+            
+                    <a href="https://github.com/aaronmansfield5" target="_blank">Haec phantasma page</a>
+                </md-block>
+            </div>
+        </div>
+    </main>
+    <div class="extra-info">
+        <label>
+            Edit & view your README.md before uploading!
+        </label>
+        <label class="credits">
+            Created by <a href="https://github.com/aaronmansfield5" class="url" target="_blank">aaronmansfield5</a>, using <a href="https://md-block.verou.me/" class="url" target="_blank">md-block.js</a> & <a href="https://prismjs.com/" class="url" target="_blank">prism.js</a>.
+        </label>
+    </div>
+</body>
+
+</html>

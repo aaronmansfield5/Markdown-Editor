@@ -1,0 +1,103 @@
+:root {
+    --bg-color: #0d1117;
+    --header-color: #161b22;
+    --search-bar-color: #0d1117;
+    --search-bar-border-color: #30363d;
+    --text-color-rgb: rgb(255, 255, 255);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+div.locked {
+    position: fixed;
+    inset: 0 0 auto;
+    min-height: 2.4rem;
+    background-color: var(--header-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 15px;
+}
+
+main {
+    margin-top: 6rem;
+}
+
+.header-lbl {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+    background-color: transparent;
+    border: none;
+    font-weight: 700;
+    font-size: small;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 55px;
+    color: var(--text-color-rgb);
+    text-decoration: none;
+    transition: all 150ms linear;
+}
+
+a.header-lbl:hover {
+    opacity: 0.75;
+}
+
+div:not(.input):not(.preview):not(.extra-info) {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+}
+
+.md-input {
+    min-width: 35%;
+    max-width: 35%;
+    min-height: 420px;
+    resize: none;
+    border-radius: 5px;
+    border-width: 1px;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol !important;
+}
+
+.md-preview {
+    overflow: scroll;
+    min-width: 35%;
+    max-width: 35%;
+    min-height: 420px;
+    max-height: 420px;
+}
+
+.extra-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.extra-info > label:not(.credits) {
+    font-weight: 550;
+}
+
+.extra-info > .credits {
+    font-weight: 350;
+    font-size: smaller;
+}
+
+.url {
+    text-decoration: none;
+    color: #3f84e4;
+}
+
+.url:hover {
+    text-decoration: underline 0.5px;
+}
